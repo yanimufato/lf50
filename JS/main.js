@@ -1,9 +1,9 @@
-/*let usuarioIngresado = prompt("Ingrese su usuario")
+let usuarioIngresado = prompt("Ingrese su usuario")
 let passwordIngresado = prompt("Ingrese su contraseña")
 
 if ((usuarioIngresado != "") && (passwordIngresado != "")){
     console.log("Bienvenido", usuarioIngresado)
-}*/
+}
 
 
 debugger
