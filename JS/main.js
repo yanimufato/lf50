@@ -53,7 +53,7 @@ function calcularLibro (libroIngresado) {
     }
 }
 
-const libros =[galeano, storni, cortazar, borges]
+const libros =[]
 const carrito =[]
 
 class Libro {
