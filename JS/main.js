@@ -53,7 +53,8 @@ function calcularLibro (libroIngresado) {
     }
 }
 
-const libros =[]
+const libros =[galeano, storni, cortazar, borges]
+const carrito =[]
 
 class Libro {
     constructor (titulo, autor, editorial, codigo, ){
@@ -82,3 +83,16 @@ function listarFasiculos () {
         console.table(fas)
     })
 }
+
+
+function cargarLibros ()
+    for (const libro of libros){
+        const li = document.createElement ("li")
+        li.className = "coleccionLibro"
+        li.innerText = libro
+        li.id = libro + "lib"
+        li.addEventListener("click", ()=> {
+            agregarCarrito (`${libro}`)
+        })
+        listadoLibro.append(li)
+    }
