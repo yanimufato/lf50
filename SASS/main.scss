@@ -1,3 +1,8 @@
-header {
-    background-color: aqua;
-}
+.galeriaLibros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .libros {
+        width: 40px;
+    }
+} 

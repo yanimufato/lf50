@@ -1,0 +1,1 @@
+selectLibro.innerHTML = cargoLibros()

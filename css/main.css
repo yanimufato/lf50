@@ -1,3 +1,5 @@
-header {
+.galeriaLibros {
   background-color: aqua;
+  display: flex;
+  justify-content: center;
 }
