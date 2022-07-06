@@ -21,7 +21,12 @@ function mostrarLibros (){
         const boton = document.getElementById(`boton${libro.id}`);
         boton.addEventListener("click", ()=>{
             agregarAlCarrito(`${libro}`)
-            alert(`Se agrego ${libro.titulo}`)
+            Swal.fire(
+                'Genial',
+                'Se agregó el producto al carrito',
+                'success'
+              )
+           // alert(`Se agrego ${libro.titulo}`)
         })
     })
 
