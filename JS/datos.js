@@ -1,10 +1,10 @@
-const productos = [
+const libros = [
     {
         id: 1,
         isbn: 9788426134677, 
         codigo: "JUZ285", 
         cantidad: 20, 
-        img: "lf50_yanimufato/img/historia-de-dos-ciudades.png", 
+        img: "./img/historia-de-dos-ciudades.png", 
         titulo: "HISTORIA DE DOS CIUDADES", 
         autor: "Dickens, Charles", 
         precio: 1990
@@ -15,7 +15,7 @@ const productos = [
         isbn: 9789507541841, 
         codigo: "ECO151", 
         cantidad: 17, 
-        img: "lf50_yanimufato/img/diario-de-la-patagonia.png", 
+        img: "./img/diario-de-la-patagonia.png", 
         titulo: "DIARIO DE LA PATAGONIA", 
         autor: "Darwin, Charles", 
         precio: 1390
@@ -26,7 +26,7 @@ const productos = [
         isbn: 9788426108036, 
         codigo: "JUZ055", 
         cantidad: 24, 
-        img: "lf50_yanimufato/img/romeo-y-julieta.png", 
+        img: "./img/romeo-y-julieta.png", 
         titulo: "ROMEO Y JULIETA", 
         autor: "Shakespeare, William", 
         precio: 990
@@ -37,7 +37,7 @@ const productos = [
         isbn: 9789507546815, 
         codigo: "ECO381", 
         cantidad: 22, 
-        img: "lf50_yanimufato/img/historia-de-la-leyenda.png", 
+        img: "./img/historia-de-la-leyenda.png", 
         titulo: "FACUNDO QUIROGA. DE LA LEYENDA A LA HISTORIA", 
         autor: "Torres Molina, Ramón", 
         precio: 2890
@@ -48,7 +48,7 @@ const productos = [
         isbn: 9789507541667, 
         codigo: "ECO172", 
         cantidad: 20, 
-        img: "lf50_yanimufato/img/mitos-y-leyendas.png", 
+        img: "./img/mitos-y-leyendas.png", 
         titulo: "MITOS Y LEYENDAS DEL RIO, DEL CAMPO Y DE LA CIUDAD", 
         autor: "Voglino, Damian", 
         precio: 1190
@@ -59,7 +59,7 @@ const productos = [
         isbn: 9789507546044, 
         codigo: "ECO363", 
         cantidad: 18, 
-        img: "lf50_yanimufato/img/mujeres-de-fuego.png", 
+        img: "./img/mujeres-de-fuego.png", 
         titulo: "MUJERES DE FUEGO: HISTORIAS DE AMOR , ARTE Y MILITANCIA", 
         autor: "Calloni, Stella", 
         precio: 1790
@@ -138,4 +138,4 @@ const productos = [
     "precio": 1590}*/
 ]
 
-export { productos };
+const carrito = []
