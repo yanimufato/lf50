@@ -1,5 +1,5 @@
 const galeria = document.querySelector('#productoContenedor');
-const carritoCargado = document.querySelector('#carritoContenedor');
+const carritoContenedor = document.getElementById("carritoContenedor");    
 
 
 function mostrarLibros (){
@@ -15,17 +15,16 @@ function mostrarLibros (){
                                 <p class="card-text">Precio: $ ${libro.precio}</p>
                                 <button class="btn" id=boton${libro.id}>Comprar</button>
                             </div>
-                        </div>`
-        div.id = libro + "lib"                
+                        </div>`               
         galeria.appendChild(div) 
         const boton = document.getElementById(`boton${libro.id}`);
         boton.addEventListener("click", ()=>{
-            agregarAlCarrito(`${libro}`)
+            agregarAlCarrito(`${libro.id}`)
             Swal.fire(
                 'Genial',
                 'Se agregó el producto al carrito',
                 'success'
-              )
+            )              
            // alert(`Se agrego ${libro.titulo}`)
         })
     })
@@ -33,15 +32,39 @@ function mostrarLibros (){
 }
 mostrarLibros ()
 
-function agregarAlCarrito (lib){
-    carrito.push(lib)
+const agregarAlCarrito = (libroId) => {
+    let productoLibro = libros.find(productoLibro => libro.id == libroId)   
+            
+            carrito.push(productoLibro)
+
+            const div = document.createElement('div')
+            div.classList.add("libroEnCarrito")
+            div.innerHTML =  `<div class="card">                        
+                                <div class="card-body"
+                                    <h3 class="card-title">${libro.titulo}</h3>
+                                    <p class="card-text">Autor: ${libro.autor}</p>
+                                    <p class="card-text">Precio: $ ${libro.precio}</p>
+                                    <button class="btn" id=boton${libro.id}>Comprar</button>
+                                </div>
+                            </div>`
+            document.querySelector('#carritoContenedor').innerHTML += div  
+        
+                              
+}
+agregarAlCarrito ()
+
+
+/*
+function agregarAlCarrito (libroId){
+    
+    carrito.push(productoLibro)
     guardoCarrito()
     const div = 
                 `<div class="card">
                         <div class="card-body"
-                        <h3 class="card-title">${lib}</h3>
-                        <p class="card-text">Autor: ${lib}</p>
-                        <p class="card-text">Precio: $ ${lib}</p>
+                        <h3 class="card-title">${libroId}</h3>
+                        <p class="card-text">Autor: ${libroId}</p>
+                        <p class="card-text">Precio: $ ${libroId}</p>
                     </div>
                 </div>`
                
@@ -55,7 +78,7 @@ function agregarAlCarrito (lib){
     let str = JSON.stringify(div)  
     localStorage.setItem("div", str)
 }
-agregarAlCarrito ()
+agregarAlCarrito ()*/
 
 function removerDelCarrito (lib) {
     const libroAremover = document.getElementById(`${lib}`)
