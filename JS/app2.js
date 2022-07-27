@@ -31,9 +31,9 @@ function mostrarLibros (){
 
 }
 mostrarLibros ()
-
+//let productoLibro = libros.find(productoLibro => libro.id == libroId)  
 const agregarAlCarrito = (libroId) => {
-    let productoLibro = libros.find(productoLibro => libro.id == libroId)   
+ 
             
             carrito.push(productoLibro)
 

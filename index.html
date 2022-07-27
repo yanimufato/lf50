@@ -22,8 +22,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                      <p>|  LOS FAMOSOS 50</p>
+                    <img src="./img/logo.png" alt=""  class="d-inline-block align-text-top">
+                      <p> |  LOS FAMOSOS 50</p>
                 </a>  
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,16 +33,6 @@
                   <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   </li>
-                  <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Editoriales
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="./secciones-2/sudamericana.html">Sudamericana</a></li>
-                        <li><a class="dropdown-item" href="./secciones-2/planeta.html">Planeta</a></li>
-                        <li><a class="dropdown-item" href="./secciones-2/sudestada.html">Sudestada</a></li>
-                    </ul>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./secciones-1/quienes-somos.html">¿Quienes somos?</a>
                         </li>
@@ -59,25 +49,26 @@
         </nav>
     </header>
 
-    <main id="productoContenedor">
-      
-    </main>
-    <div class="modal-container" id="modal_container">
-      <div class="modal-carrito">
-        <h3>Carrito</h3>
-        <button id="cerrar">Cerrar</button>
-        <div id="carritoContenedor"></div>
+    <main id="producto-contenedor" class="galeriaLibros">
+
+      <div class="modal-container" id="modal_container">
+        <div class="modal-carrito">
+          <h3>Carrito</h3>
+          <div id="carrito-contenedor"></div>
+          <button id="cerrar">Cerrar</button>
+        </div>
       </div>
-    </div>
+
+    </main>
+
 
 
     <footer>
 
     </footer>
-    <script src="./js/datos.js"></script>
-    <script src="./js/app2.js"></script>
-    <!-- <script src="./js/datos.js" type="module"></script>
-    <script src="./js/app.js" type="module"></script>
-    <script src="./js/modal.js" type="module"></script> -->
+
+    <script src="./js/stock.js" type="module"></script>
+    <script src="./js/app3.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
 </body>
 </html>
