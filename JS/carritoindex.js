@@ -17,7 +17,7 @@ export const carritoIndex = (productoId) => {
                             <p>${producto.titulo}</p>
                             <p>Precio: $${producto.precio}</p>
                             <p id="cantidad${producto.id}">Cantidad: ${producto.cantidad}</p>
-                            <button id="eliminar"${producto.id} class= "boton-eliminar" >Quitar</button>
+                            <button id="eliminar"${producto.id} class= "boton-eliminar">Quitar</button>
                         </div>    
                         `
         contenedorCarrito.appendChild(div)
